@@ -6,7 +6,11 @@ import sqlite3
 import pandas as pd
 import pytest
 
-pytest_plugins = ["pytest_misata.plugin"]
+# No pytest_plugins line: the fixtures arrive through the package's pytest11
+# entry point, exactly as they do for a user. Registering the module here as
+# well would double-register it ("Plugin already registered under a different
+# name") on any environment where the package is installed, which is every
+# environment that matters, including CI. Run `pip install -e .` first.
 
 SCHEMA = {
     "users": {
