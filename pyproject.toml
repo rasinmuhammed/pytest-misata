@@ -9,7 +9,7 @@ description = "pytest fixtures for Misata: deterministic, referentially-intact m
 readme = "README.md"
 license = { text = "MIT" }
 authors = [{ name = "Muhammed Rasin", email = "rasinbinabdulla@gmail.com" }]
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 dependencies = [
     "pytest>=7.0",
     "misata>=0.8.5",
